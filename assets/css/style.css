@@ -78,8 +78,9 @@ h2{
 .ergebnis{
     background: white;
     width: 40%;
-    margin: 0 auto;
+    margin: 2% auto;
     border-radius: 10px;
+    padding: 1% 0;
 }
 
 .ergebnis p{
