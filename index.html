@@ -10,11 +10,22 @@
   <body>
     <main>
       <section class="cipher">
-        <input type="text" name="" id="inputText" />
-        <input type="button" value="verschlüsseln" onclick="verschluesseln()" />
-        <input type="number" name="" id="decodeNumber" />
-        <h2 id="ergebnis"></h2>
+        <h1>Caesar Cipher</h1>
+        <div class="left">
+          <h2>Was soll verschlüsselt werden?</h2>
+          <input type="text" name="" id="inputText" />
+        </div>
+        <div class="right">
+          <h2>Um wie viele Stellen soll "verschlüsselt" werden?</h2>
+          <input type="number" name="" id="decodeNumber" />
+          <p>*positive sowie negative Zahlen möglich!</p>
+        </div>
       </section>
+      <input type="button" value="verschlüsseln" onclick="verschluesseln()" />
+      <div class="ergebnis">
+        <p>Ergebnis:</p>
+        <h2 id="ergebnis">Platzhalter</h2>
+      </div>
     </main>
     <script src="./assets/js/main.js"></script>
   </body>
