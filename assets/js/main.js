@@ -22,14 +22,10 @@ verschluesseln = () => {
     for(j=0;j<myArray.length;j++){
       if(input1[i] == myArray[j]){
         if(j+Number(decode) > 25){
-          if(j+Number(decode) < -25){
-            x += myArray[(j+Number(decode))+26]
-            ergebnis.innerHTML = x
-          } else{
-            x += myArray2[j+Number(decode)]
-            ergebnis.innerHTML = x
-          }
           x+= myArray[j+Number(decode)-26]
+          ergebnis.innerHTML = x
+        } else if(j+Number(decode) < -25){
+          x += myArray2[j+Number(decode)+26]
           ergebnis.innerHTML = x
         } else{
           x += myArray2[j+Number(decode)]
